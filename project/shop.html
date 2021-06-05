@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SNAIL TO LIZARD</title>
+        <link href="shop.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+        <!--menu set-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+       
+    </head>
+
+    <body>
+      
+      <div>
+            <table class="top">
+                <tr>
+                    <td><img class="logo" src="img/LOGO.png"></td>
+                </tr>
+            </table>
+            <table class="welcome">
+                <tr>
+                    <td>Whatever choice you make makes you. Choose wisely.</td>
+                </tr>
+            </table>
+            <br>
+            <hr class="style-one">
+            <br>
+            <br>
+            <table class="link">
+                <tr>
+                    <td>
+                        <a href="homepage.html">HOME</a>
+                        <a href="blog.html">BLOG</a>
+                        <a href="about.html">ABOUT US</a>
+                        <a href="contact.html">CONTACT US</a>
+                        <a href="shop.html">SHOP</a>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <div class="taskbar">
+              <a href="homepage.html">HOME</a>
+              <a href="blog.html">BLOG</a>
+              <a href="about.html">ABOUT US</a>
+              <a href="contact.html">CONTACT US</a>
+              <a href="shop.html">SHOP</a>
+            </div>
+        </div>
+        
+        <!-- Slide Show Container -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/book/Untitled-3.png" style="width:100%">
+              <div class="text">The Art Of Happiness</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/book/Untitled-4.png" style="width:100%">
+              <div class="text">The Art Of War</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/book/Untitled-1.png" style="width:100%">
+              <div class="text">Steve Jobs</div>
+            </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+
+            <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 8000); // Change image every 8 seconds
+            }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+
+       
+        
+          <table class="new" width="60%" cellpadding="10" cellspacing="15">
+            <tr>
+              <td colspan="4"><h4 class="title">New Release</h4></td>
+            </tr>
+            <tr>
+              <td width="150"><img src="img/book/SteveJobs.gif" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/the-art-of-happiness.webp" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/how-successful-people-think.webp"  width="150" height="250"></td>
+              <td  width="150"><img src="img/book/DontSweatTheSmallStuff.gif" width="150" height="250"></td>
+            </tr>
+            <tr>
+              <td width="150"><a href="stevejods.html"><p>Steve Jods By Walter Isaacson</p></a></td>
+              <td width="150"><a href="theartofhappy.html"><p>The Art of Happiness, by Dalai Lama</p></a></td>
+              <td width="150"><a href="howsuccessful.html"><p>How he successful people think: Change your thinking</p></a></td>
+              <td width="150"><a href="dontsweat.html"><p>Don’t Sweat the Small Stuff, by Richard Carlson</p></a></td>
+            </tr>
+          </table>
+
+        <div>
+          <table class="new" width="60%" cellpadding="10" cellspacing="15">
+            <tr>
+              <td colspan="4"><h4 class="title">Hottest Review</h4></td>
+            </tr>
+            <tr>
+              <td width="150"><img src="img/book/7-habits-of-highly-effective-people.webp" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/the-life-changing-magic-of-tidying-up.webp" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/ive-been-thinking.webp"  width="150" height="250"></td>
+              <td  width="150"><img src="img/book/make-your-bed.webp" width="150" height="250"></td>
+            </tr>
+            <tr>
+              <td width="150"><a href="7habits.html"><p>7 habits of highly effective people</p></a></td>
+              <td width="150"><a href="thelife.html"><p>The life changing magic of tidying up</p></a></td>
+              <td width="150"><a href="Ive-beenthinking.html"><p>I've been thinking</p></a></td>
+              <td width="150"><a href="makeyourbed.html"><p>Make your bed</p></a></td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table class="new" width="60%" cellpadding="10" cellspacing="15">
+            <tr>
+              <td colspan="4"><h4 class="title">Editor recommended</h4></td>
+            </tr>
+            <tr>
+              <td width="150"><img src="img/book/TheArtOfWar.PNG" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/imperfect-courage.webp" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/the-energy-bus.webp"  width="150" height="250"></td>
+              <td  width="150"><img src="img/book/the-5-second-rule.webp" width="150" height="250"></td>
+            </tr>
+            <tr>
+              <td width="150"><a href="theartofwar.html"><p>The art of war</p></a></td>
+              <td width="150"><a href="imprefectcourage.html"><p>Imperfect courage</p></a></td>
+              <td width="150"><a href="theenergybus.html"><p>The energy bus</p></a></td>
+              <td width="150"><a href="the5secondrule.html"><p>The 5 second rule</p></a></td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table class="new" width="60%" cellpadding="10" cellspacing="15">
+            <tr>
+              <td colspan="4"><h4 class="title">Other Books</h4></td>
+            </tr>
+            <tr>
+              <td width="150"><img src="img/book/AwakenTheGiantWithin.gif" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/HowToWinFriends.gif" width="150" height="250"></td>
+              <td  width="150"><img src="img/book/ThinkAndGrowRich.gif"  width="150" height="250"></td>
+              <td  width="150"><img src="img/book/switch.jpg" width="150" height="250"></td>
+            </tr>
+            <tr>
+              <td width="150"><a href="awakenthegiant.html"><p>Awaken The Giant Within</p></a></td>
+              <td width="150"><a href="howtowinfriends.html"><p>How to win friends</p></a></td>
+              <td width="150"><a href="thinkandgrow.html"><p>Think and grow rich</p></a></td>
+              <td width="150"><a href="switch.html"><p>Switch</p></a></td>
+            </tr>
+          </table>
+        </div>
+    
+        <br>
+        <br>
+        <br>
+
+        <!-- Search Bar -->
+        <div class="searchbar" align="center">
+          <div class="whitespace">
+            <br>
+            <br>
+            <br>
+          </div>
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+          <ul id="myUL">
+            <li><a href="theartofwar.html">THE ART OF WAR</a></li>
+            <li><a href="howtowinfriends.html">HOW TO WIN FRIEND</a></li>
+
+            <li><a href="thinkandgrow.html">THINK AND GROW RICH</a></li>
+            <li><a href="imprefectcourage.html">IMPERFECT COURAGE</a></li>
+
+            <li><a href="theenergybus.html">THE ENERGY BUS</a></li>
+            <li><a href="the5secondrule.html">THE FIVE SECOND RULE</a></li>
+            <li><a href="makeyourbed.html">MAKE YOUR BED</a></li>
+
+            <li><a href="7habits.html">7 HABITS OF HIGH EFFECTIVE PEOPLE</a></li>
+            <li><a href="awakenthegiant.html">AWAKEN THE GIANT WITHIN</a></li>
+            <li><a href="dontsweat.html">DON'T SWEAT THE SMALL STUFF</a></li>
+            <li><a href="howsuccessful.html">HOW SUCCESSFUL PEOPLE THINK</a></li>
+            <li><a href="howtowinfriends.html">HOW TO WIN FRIENDS</a></li>
+            <li><a href="Ive-beenthinking.html">IVE BEEN THINKING</a></li>
+            <li><a href="stevejods.html">STEVE JODS</a></li>
+            <li><a href="switch.html">SWITCH</a></li>
+            <li><a href="thelife.html">THE LIFE CHANGING MAGIC OF TIDYING UP</a></li>
+            
+          </ul>
+        </div>
+
+        <script>
+          function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+          </script>
+
+      <div class="whitespace">
+        <br>
+        <br>
+        <br>
+      </div>
+
+      <footer class="footer-distributed">
+
+        <div class="footer-right">
+  
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+          
+  
+        </div>
+  
+        <div class="footer-left">
+  
+          <p class="footer-links">
+            <a class="link-1" href="homepage.html">Home</a>
+  
+            <a href="blog.html">Blog</a>
+  
+            <a href="about.html">About</a>
+  
+            <a href="contact.html">Contact</a>
+  
+            <a href="shop.html">Shop</a>
+  
+          </p>
+  
+          <p>Snail To Lizard &copy; 2020</p>
+        </div>
+  
+      </footer>
+    </body>
+</html>

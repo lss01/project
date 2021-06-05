@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping cart</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><link rel="stylesheet" href="./orderpage.css">
+
+</head>
+<body>
+
+
+<!-- partial:index.partial.html -->
+<!-- Nav -->
+<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+    <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+    </div>
+</nav>
+
+<div align="center">
+  <font color="lightblue"><h3>Select the book that you want to add into the cart</h3></font>
+  <br>
+  <button src="homepage.html">Back to home page</button>
+  <button onclick="goBack()">Back to previous page</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+</div>
+
+<br>
+
+<!-- Main -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/7-habits-of-highly-effective-people.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">7 habits of highly effective people</h4>
+    <p class="card-text">Price: RM10.5</p>
+    <a href="#" data-name="7 habits of highly effective people" data-price="10.5" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/AwakenTheGiantWithin.gif" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Awaken the Giant within (Anthony Robbins)</h4>
+    <p class="card-text">Price: RM12.22</p>
+    <a href="#" data-name="Awaken the Giant within (Anthony Robbins)" data-price="12.22" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/DontSweatTheSmallStuff.gif" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Don't sweat the small stuff</h4>
+    <p class="card-text">Price: RM50.00</p>
+    <a href="#" data-name="Don't sweat the small stuff" data-price="50.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/how-successful-people-think.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">How successful people think</h4>
+    <p class="card-text">Price: RM26.5</p>
+    <a href="#" data-name="How successful people think" data-price="26.5" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/HowToWinFriends.gif" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">How to win friend (Dale Carnegie)</h4>
+    <p class="card-text">Price: RM15.22</p>
+    <a href="#" data-name="How to win friend(Dale Carnegie)" data-price="15.22" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/imperfect-courage.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Imperfect courage (Jessica Honegger)</h4>
+    <p class="card-text">Price: RM25</p>
+    <a href="#" data-name="Imperfect courage(Jessica Honegger)" data-price="25" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/ive-been-thinking.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">I've been thinking</h4>
+    <p class="card-text">Price: RM20.5</p>
+    <a href="#" data-name="I've been thinking" data-price="20.5" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/make-your-bed.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Make your bed</h4>
+    <p class="card-text">Price: RM16.22</p>
+    <a href="#" data-name="Make your bed" data-price="16.22" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/SteveJobs.gif" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Steve Jobs </h4>
+    <p class="card-text">Price: RM15.66</p>
+    <a href="#" data-name="Steve Jobs " data-price="15.66" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/switch.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Switch</h4>
+    <p class="card-text">Price: RM30.5</p>
+    <a href="#" data-name="Switch" data-price="30.5" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/the-5-second-rule.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">The 5 second rule</h4>
+    <p class="card-text">Price: RM17.22</p>
+    <a href="#" data-name="The 5 second rule" data-price="17.22" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/the-art-of-happiness.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">The art of happiness</h4>
+    <p class="card-text">Price: RM25</p>
+    <a href="#l" data-name="The art of happiness" data-price="25" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/the-energy-bus.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">The energy bus</h4>
+    <p class="card-text">Price: RM14.5</p>
+    <a href="#" data-name="The energy bus" data-price="14.5" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/ThinkAndGrowRich.gif" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Think and grow rich</h4>
+    <p class="card-text">Price: RM18.22</p>
+    <a href="#" data-name="Think and grow rich" data-price="18.22" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/TheArtOfWar.PNG" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">The art of war</h4>
+    <p class="card-text">Price: RM22</p>
+    <a href="#" data-name="The art of war" data-price="22" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <br>
+          <br>
+  <img class="card-img-top" src="img/book/the-life-changing-magic-of-tidying-up.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">The life changing magic of tidying up</h4>
+    <p class="card-text">Price: RM10.5</p>
+    <a href="#" data-name="The life changing magic of tidying up" data-price="10.5" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: RM<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"><a href="thankyou.html"><font color="yellow">Order now</font></a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./orderscript.js"></script>
+
+  <div class="whitespace">
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+      
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="homepage.html">Home</a>
+
+        <a href="blog.html">Blog</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="shop.html">Shop</a>
+
+      </p>
+
+      <p>Snail To Lizard &copy; 2020</p>
+    </div>
+
+  </footer>
+
+</body>
+</html>
